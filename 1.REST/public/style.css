@@ -1,0 +1,44 @@
+.heading {
+    color: blue;
+    font-size: 50px;
+}
+
+.post {
+    background-color: pink;
+    width: 500px;
+}
+
+.username {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.content {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.button {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.button > a {
+    text-decoration: none;
+    color: black;
+}
+
+.delete {
+    margin: 10px;
+}
+
+.new {
+    text-decoration: none;
+    font-size: 30px;    
+}
+
+.id{
+    margin-left: 10px;
+}
+

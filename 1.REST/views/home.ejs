@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="heading">All Posts</h1>
+
+       <% for(post of posts){ %>
+            <div class="post">
+                <h3 class="username">Username : @<%= post.username %></h3> 
+                <p class="content">Content : <%= post.content %></p>
+                <button class="button"><a href="posts/<%= post.id %>">Show in Detail</a></button>
+                <button class="button"><a href="posts/<%= post.id %>/edit">Edit</a></button>
+                <form action="/posts/<%= post.id %>?_method=DELETE" method="post">
+                    <button class="button delete">Delete Post</button>
+                </form>
+            </div>
+       <% } %>
+        
+       <h3><button><a class="new" href="posts/new">Add More Content</a></button></h3>
+</body>
+</html>
